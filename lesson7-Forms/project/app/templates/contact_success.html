@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <title>Contact - Success</title>
+</head>
+<body>
+    <div class="contact-success">
+        <a href="{% url 'index' %}">Home</a>
+        <p>Your message has been sent successfully!</p>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1{
+   color: #333;
+   font-size: 3em;
+}
+img{
+   width: 200px;
+   height: 200px;
+   border-radius: 10px;
+}
+ul{
+   list-style-type: none;
+   padding: 5px;
+   color: gray;
+   border: solid 1px #333;
+   border-radius: 5px;
+}

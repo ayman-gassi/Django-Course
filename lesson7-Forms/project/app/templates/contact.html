@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+        <img src="{% static 'images/django.jpeg' %}" alt="image">
+    <h1>Django course : lesson 7</h1>
+    <a href="{% url 'index' %}">Home</a>
+    <form action="{% url 'contact' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
